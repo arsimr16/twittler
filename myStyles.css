@@ -1,3 +1,52 @@
 h1 {
-	color: skyblue;
+	color: white;
+	text-align: center;
+	font-size: 50px;
+}
+
+body {
+	background-color: skyblue;
+}
+.tweet {
+	padding: 0 10px;
+    border-style: solid;
+    border-color: black;
+    background: white;
+    border-radius: 5px;
+    border-width: thin;
+    margin-bottom: 10px;
+}
+
+.feed {
+	width: 60%;
+	margin: auto;
+}
+
+.user {
+	float: left;
+	font-weight: bold;
+}
+
+.time {
+	float: right;
+	color: gray;
+}
+
+.text {
+	clear: both;
+}
+
+.center {
+	text-align: center;
+}
+
+.refresh {
+	font-size: 30px;
+	border-style: solid;
+	border-color: black;
+	background-color: white;
+	color: green;
+	border-width: thin;
+	border-radius: 5px;
+	font-weight: bold;
 }
