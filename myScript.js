@@ -8,7 +8,7 @@ $(document).ready(function(){
     var $time = $('<p class="time"></p>');
     var $text = $('<p class="text"></p>');
 
-    $user.text('@' + tweet.user + ':');
+    $user.text('@' + tweet.user);
     $time.text(moment().calendar());
     $text.text(tweet.message);
 
@@ -38,6 +38,12 @@ $(document).ready(function(){
       $tweet.append($text);
     }
     console.log($(this).text());
+  });
+
+  $('.tweet').on('click', function(){
+    var user = $(this).find('.user').text().substring(1);
+    $('.tweet').find('#' + user).closest('.tweet').addClass('show');
+    $('.tweet').not('.show').hide();
   });
 
 });

@@ -2,6 +2,7 @@ h1 {
 	color: white;
 	text-align: center;
 	font-size: 50px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 body {
@@ -15,6 +16,7 @@ body {
     border-radius: 5px;
     border-width: thin;
     margin-bottom: 10px;
+    box-shadow: 3px 3px gray;
 }
 
 .feed {
@@ -40,7 +42,7 @@ body {
 	text-align: center;
 }
 
-.refresh {
+.btn {
 	font-size: 30px;
 	border-style: solid;
 	border-color: black;
