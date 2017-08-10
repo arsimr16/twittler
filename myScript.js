@@ -21,6 +21,8 @@ $(document).ready(function(){
   }
 
   $('.refresh').on('click', function() {
+    $('.show').removeClass('show');
+    $('.tweet').not('.show').show();
     for(var i = 0; i < streams.home.length - 1; i++) {
       var tweet = streams.home[i];
       var $tweet = $('<div class="tweet"></div>');
@@ -40,9 +42,31 @@ $(document).ready(function(){
     console.log($(this).text());
   });
 
-  $('.tweet').on('click', function(){
-    var user = $(this).find('.user').text().substring(1);
-    $('.tweet').find('#' + user).closest('.tweet').addClass('show');
+  $('#shawndrost1').on('click', function(){
+    $('.show').removeClass('show');
+    $('.tweet').not('.show').show();
+    $('.tweet').find('#shawndrost').closest('.tweet').addClass('show');
+    $('.tweet').not('.show').hide();
+  });
+
+  $('#sharksforcheap1').on('click', function(){
+    $('.show').removeClass('show');
+    $('.tweet').not('.show').show();
+    $('.tweet').find('#sharksforcheap').closest('.tweet').addClass('show');
+    $('.tweet').not('.show').hide();
+  });
+
+  $('#mracus1').on('click', function(){
+    $('.show').removeClass('show');
+    $('.tweet').not('.show').show();
+    $('.tweet').find('#mracus').closest('.tweet').addClass('show');
+    $('.tweet').not('.show').hide();
+  });
+
+  $('#douglascalhoun1').on('click', function(){
+    $('.show').removeClass('show');
+    $('.tweet').not('.show').show();
+    $('.tweet').find('#douglascalhoun').closest('.tweet').addClass('show');
     $('.tweet').not('.show').hide();
   });
 
